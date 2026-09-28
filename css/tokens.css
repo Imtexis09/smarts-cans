@@ -1,0 +1,4 @@
+/* Tokens de diseño: colores y temas claro/oscuro */
+:root{--bg:#06151A;--bg2:#0B2229;--ink:#EAF4F2;--mute:#9BB8B8;--t:#2DD4BF;--a:#FFA04D;--card:rgba(255,255,255,.055);--ln:rgba(255,255,255,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#F3F7F6;--bg2:#E3EEEC;--ink:#0C2429;--mute:#476266;--t:#0B7F78;--a:#D9601A;--card:rgba(255,255,255,.85);--ln:rgba(12,36,41,.16)}}
+:root[data-theme="light"]{--bg:#F3F7F6;--bg2:#E3EEEC;--ink:#0C2429;--mute:#476266;--t:#0B7F78;--a:#D9601A;--card:rgba(255,255,255,.85);--ln:rgba(12,36,41,.16)}
