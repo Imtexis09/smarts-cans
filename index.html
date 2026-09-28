@@ -10,10 +10,11 @@
 </head><body>
 <canvas id="cv"></canvas><div class="pg" id="pg"></div>
 
+<div id="stage">
 <section class="s on" style="justify-content:center">
 <span class="k r">Propuesta de innovación · Materiales y manufactura</span>
 <h1 class="r">Smart-CANs</h1>
-<h3 class="r" style="color:var(--t);font-weight:600;font-size:clamp(1.4rem,3vw,2.4rem)">Una resina reciclada. Cualquier producto.</h3>
+<h3 class="r" style="color:var(--t);font-weight:600;font-size:38.4px">Una resina reciclada. Cualquier producto.</h3>
 <p class="r">Redes covalentes adaptativas y extrusión reactiva inteligente para una industria del plástico circular.</p>
 </section>
 
@@ -42,7 +43,7 @@
 <span class="k r">El mecanismo</span>
 <h2 class="r">Los enlaces cambian de lugar, la red no se rompe</h2>
 <div class="g g2">
-<div class="c r" style="display:flex;flex-direction:column;justify-content:center;gap:1.5vh"><div style="font-size:clamp(1.3rem,2.5vw,2.1rem);font-weight:700;line-height:1.5">R₁–COO–R₂ + R₃–OH<br><span style="color:var(--a)">⇌</span> R₁–COO–R₃ + R₂–OH</div><p>Transesterificación reversible con Zn(acac)₂. Sin pérdida de masa molecular.</p></div>
+<div class="c r" style="display:flex;flex-direction:column;justify-content:center;gap:13.5px"><div style="font-size:33.6px;font-weight:700;line-height:1.5">R₁–COO–R₂ + R₃–OH<br><span style="color:var(--a)">⇌</span> R₁–COO–R₃ + R₂–OH</div><p>Transesterificación reversible con Zn(acac)₂. Sin pérdida de masa molecular.</p></div>
 <div class="c r"><svg viewBox="0 0 400 240" role="img" aria-label="Viscosidad frente a temperatura">
 <path d="M40 20V200H380" class="st" stroke-width="2" opacity=".5"/>
 <path d="M40 40C150 45 170 60 190 190C250 195 330 198 375 198" class="st dr" pathLength="1" stroke="var(--mute)"/>
@@ -83,7 +84,7 @@
 <div class="c r"><svg viewBox="0 0 400 170" role="img" aria-label="Costo relativo 100 frente a 68">
 <rect x="0" y="12" width="400" height="56" rx="10" fill="var(--mute)" opacity=".35"/><text x="14" y="48" font-size="20" font-weight="700">Varias resinas · 100%</text>
 <rect class="bw" x="0" y="98" width="272" height="56" rx="10" fill="var(--t)"/><text x="14" y="134" font-size="20" font-weight="700" style="fill:#06151A">Smart-CANs · 68%</text></svg><b class="l">Costo operativo relativo</b></div>
-<div class="g g2" style="gap:2vh 2vw">
+<div class="g g2" style="gap:18px 32px">
 <div class="r"><b class="big"><i class="n" data-n="32" data-p="−" data-s="%"></i></b><p>costo total</p></div>
 <div class="r"><b class="big a"><i class="n" data-n="30" data-p="−" data-s="%"></i></b><p>costo por tonelada (hasta)</p></div>
 <div class="r"><b class="big">12–15%</b><p>ahorro en inventario</p></div>
@@ -98,7 +99,7 @@
 <g class="rot"><circle cx="200" cy="150" r="105" fill="none" stroke="var(--t)" stroke-width="3" stroke-dasharray="10 12"/></g>
 <g font-size="19" font-weight="700" text-anchor="middle"><circle cx="200" cy="45" r="7" class="da"/><text x="200" y="28">Producto</text><circle cx="291" cy="203" r="7" class="da"/><text x="330" y="235">Trituración</text><circle cx="109" cy="203" r="7" class="da"/><text x="70" y="235">Extrusor REX</text></g>
 <text x="200" y="158" text-anchor="middle" font-size="18" style="fill:var(--mute)">+ catalizador</text></svg></div>
-<div style="display:flex;flex-direction:column;justify-content:center;gap:2vh"><div class="r"><b class="big"><i class="n" data-n="60" data-p="−" data-s="%"></i></b><p>emisiones de CO₂ equivalente frente a plásticos vírgenes de ingeniería</p></div>
+<div style="display:flex;flex-direction:column;justify-content:center;gap:18px"><div class="r"><b class="big"><i class="n" data-n="60" data-p="−" data-s="%"></i></b><p>emisiones de CO₂ equivalente frente a plásticos vírgenes de ingeniería</p></div>
 <p class="r">Un pantalón o una pala se trituran y vuelven al extrusor.</p></div></div>
 </section>
 
@@ -127,10 +128,12 @@
 <div class="r"><b class="big">18–24</b><p>meses de payback</p></div></div>
 </section>
 
+</div>
 <div class="bar"><b id="ct"></b><div class="gp"><button id="fs" aria-label="Pantalla completa">Pantalla completa</button><button id="th">Tema</button><button id="pv">←</button><button id="nx">→</button></div></div>
 
 <script src="js/core.js"></script>
 <script src="js/content.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/navigation.js"></script>
 <script src="js/network.js"></script>
 <script src="js/main.js"></script>

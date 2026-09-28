@@ -5,9 +5,9 @@ const P=[['Disco de vinilo','<0.02%','deformación · plastificante biobasado','
 ['Tapa de plumón','>5,000','ciclos snap-fit · resistente a solventes','<rect x="28" y="16" width="44" height="68" rx="9" class="st"/><rect x="28" y="16" width="44" height="24" rx="7" class="st" fill="var(--t)" fill-opacity=".3"/>'],
 ['Lápiz','= cedro','maquinabilidad · 30% lignina y espuma','<path d="M18 84L27 62L72 16L85 29L40 74Z" class="st"/><path d="M18 84L27 62L40 74Z" class="da"/>'],
 ['Pantalón','>4.5','cN/dtex · estirado en frío','<path d="M28 8H72L77 92H55L50 42L45 92H23Z" class="st"/>']];
-$('#pr').innerHTML=P.map(p=>`<div class="c r"><svg viewBox="0 0 100 100" style="max-width:110px" aria-hidden="true">${p[3]}</svg><b class="l">${p[0]}</b><b class="big" style="font-size:clamp(1.8rem,3vw,2.6rem)">${p[1].replace('<','&lt;').replace('>','&gt;')}</b><p>${p[2]}</p></div>`).join('');
+$('#pr').innerHTML=P.map(p=>`<div class="c r"><svg viewBox="0 0 100 100" style="max-width:110px" aria-hidden="true">${p[3]}</svg><b class="l">${p[0]}</b><b class="big" style="font-size:34px;white-space:nowrap">${p[1].replace('<','&lt;').replace('>','&gt;')}</b><p>${p[2]}</p></div>`).join('');
 const F=[['1–6','Síntesis','Formulaciones vitriméricas'],['7–12','Piloto','Smart-REX y sensores FTIR'],['13–18','Productos','Moldeo, hilado y ajuste de IA'],['19–24','Escalado','Certificación de resina reciclada']];
-$('#tl').innerHTML=F.map(f=>`<div class="c r"><b class="big" style="font-size:clamp(2rem,3.6vw,3rem)">${f[0]}</b><b class="l">${f[1]}</b><p>${f[2]}</p></div>`).join('');
+$('#tl').innerHTML=F.map(f=>`<div class="c r"><b class="big" style="font-size:48px">${f[0]}</b><b class="l">${f[1]}</b><p>${f[2]}</p></div>`).join('');
 $('#tk').innerHTML=F.map((f,k)=>`<circle cx="${30+k*313}" cy="30" r="11" class="da"/><text x="${30+k*313}" y="80" font-size="20" font-weight="700" text-anchor="${k?'middle':'start'}">Mes ${f[0].split('–')[0]}</text>`).join('');
 function lat(id,m){let h='';const c=6,r=4,dx=240/7,dy=150/5;
 if(m==0)for(let k=0;k<5;k++){let p='M10 '+(20+k*28);for(let x=10;x<=230;x+=10)p+=' L'+x+' '+(20+k*28+Math.sin(x/14+k*2)*9).toFixed(1);h+=`<path d="${p}" class="st" opacity=".8"/>`}

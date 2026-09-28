@@ -7,14 +7,14 @@ Presentación científica de la propuesta de innovación (11 diapositivas, ~15 m
 smart-cans/
 ├── index.html
 ├── css/   tokens.css · styles.css · animations.css
-└── js/    core.js · content.js · navigation.js · network.js · main.js
+└── js/    core.js · content.js · layout.js · navigation.js · network.js · main.js
 ```
 
 ## Uso local
 Abre `index.html` en el navegador, o sirve la carpeta: `npx serve smart-cans`.
 
 ## Controles
-Flechas / espacio / deslizar: navegar · F: pantalla completa · `#N` en la URL: ir a la diapositiva N.
+Escenario fijo 16:9 escalado a cualquier pantalla (sin scroll). Flechas / espacio / deslizar: navegar · F: pantalla completa · `#N` en la URL: ir a la diapositiva N.
 
 ## Despliegue (hosting estático)
 - Netlify Drop: arrastra la carpeta `smart-cans` a app.netlify.com/drop
